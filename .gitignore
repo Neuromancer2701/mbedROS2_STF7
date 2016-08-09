@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 .build
 projectfiles
+*.pyc
 =======
 # Compiled Object files
 *.slo
