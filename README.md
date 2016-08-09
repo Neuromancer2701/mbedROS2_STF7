@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting started with Blinky on mbed OS
 
 This is a very simple guide, reviewing the steps required to get Blinky working on an mbed OS platform.
@@ -94,3 +95,6 @@ To debug the application:
  ```
 
 2. If using Keil MDK, make sure you have a license installed. [MDK-Lite](http://www.keil.com/arm/mdk.asp) has a 32KB restriction on code size.
+=======
+# mbedROS2_STF7
+>>>>>>> f3add4ef4caa477792a324fff32f0849364a0de8
