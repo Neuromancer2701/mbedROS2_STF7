@@ -18,10 +18,12 @@ cd mbed-os-example-blinky
 
 Invoke `mbed compile` specifying the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM Compiler 5:
 
-```
-mbed compile -m K64F -t ARM
-```
 
+```
+mbed toolchain GCC_ARM
+mbed target nucleo_f767zi
+mbed compile
+```
 Your PC may take a few minutes to compile your code. At the end you should get the following result:
 
 ```
@@ -45,40 +47,7 @@ Total Flash memory (text + data + misc): 43402 bytes
 Image: .\.build\K64F\ARM\mbed-os-example-blinky.bin
 ```
 
-### Program your board
 
-1. Connect your mbed device to the computer over USB.
-1. Copy the binary file to the mbed device .
-1. Press the reset button to start the program.
-
-You should see the LED of your platform turning on and off.
-
-Congratulations if you managed to complete this test!
-
-## Export the project to Keil MDK and debug your application
-
-From the command line, run the following command:
-
-```
-mbed export -m K64F -i uvision
-```
-
-You should see the following output:
-
-```
-Successful exports:
-  * K64F::uvision       .\projectfiles\uvision_K64F\Unnamed_Project
-```
-
-To debug the application:
-
-1. Start uVision.
-1. Import the uVision project generated earlier.
-1. Compile your application and generate an `.axf` file.
-1. Make sure uVision is configured to debug over CMSIS-DAP (From the Project menu > Options for Target '...' > Debug tab > Use CMSIS-DAP Debugger).
-1. Set breakpoints and start a debug session.
-
-![Image of uVision](img/uvision.png)
 
 ## Troubleshooting
 
@@ -94,7 +63,7 @@ To debug the application:
  pip install mbed-cli --upgrade
  ```
 
-2. If using Keil MDK, make sure you have a license installed. [MDK-Lite](http://www.keil.com/arm/mdk.asp) has a 32KB restriction on code size.
+
 =======
 # mbedROS2_STF7
 >>>>>>> f3add4ef4caa477792a324fff32f0849364a0de8
