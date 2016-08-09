@@ -62,8 +62,3 @@ Image: .\.build\K64F\ARM\mbed-os-example-blinky.bin
  ```
  pip install mbed-cli --upgrade
  ```
-
-
-=======
-# mbedROS2_STF7
->>>>>>> f3add4ef4caa477792a324fff32f0849364a0de8
