@@ -54,6 +54,11 @@ public:
      */
     virtual ~UDPSocket();
 
+    /** Set the socket in broadcasting mode
+    \return 0 on success, -1 on failure.
+    */
+    int set_broadcasting(bool broadcast=true);
+
     /** Send a packet over a UDP socket
      *
      *  Sends data to the specified address specified by either a domain name

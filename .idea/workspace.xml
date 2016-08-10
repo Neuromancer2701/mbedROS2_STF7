@@ -12,23 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1302b0e9-0990-4638-8e48-3f65677a1a98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.mbed" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mbed-os/features/net/network-socket/DnsQuery/DnsQuery.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mbed-os/hal/common/mbed_wait_api.c" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mbed-os-example-blinky.iml" afterPath="$PROJECT_DIR$/.idea/mbed-os-example-blinky.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os.lib" afterPath="$PROJECT_DIR$/mbed-os.lib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/docs/BUILDING.md" afterPath="$PROJECT_DIR$/mbed-os/docs/BUILDING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/features/FEATURE_UVISOR/README.md" afterPath="$PROJECT_DIR$/mbed-os/features/FEATURE_UVISOR/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/features/FEATURE_UVISOR/includes/uvisor/api/inc/rpc.h" afterPath="$PROJECT_DIR$/mbed-os/features/FEATURE_UVISOR/includes/uvisor/api/inc/rpc.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip-sys/arch/cc.h" afterPath="$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip-sys/arch/cc.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/hal/targets.json" afterPath="$PROJECT_DIR$/mbed-os/hal/targets.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/hal/targets/hal/TARGET_STM/TARGET_STM32F1/serial_api.c" afterPath="$PROJECT_DIR$/mbed-os/hal/targets/hal/TARGET_STM/TARGET_STM32F1/serial_api.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/libraries/net/eth/EthernetInterface/EthernetInterface.h" afterPath="$PROJECT_DIR$/mbed-os/libraries/net/eth/EthernetInterface/EthernetInterface.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/libraries/net/lwip/lwip-sys/arch/cc.h" afterPath="$PROJECT_DIR$/mbed-os/libraries/net/lwip/lwip-sys/arch/cc.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/rtos/rtos/Thread.cpp" afterPath="$PROJECT_DIR$/mbed-os/rtos/rtos/Thread.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.cpp" afterPath="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.h" afterPath="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.h" />
     </list>
     <ignored path="mbed-os-example-blinky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,21 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="468">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -82,15 +57,12 @@
         <option value="$PROJECT_DIR$/EthernetInterface/EthernetInterface.h" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/lwip-sys/arch/cc.h" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/eth/EthernetInterface/EthernetInterface.h" />
-        <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.h" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/Socket.cpp" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/Endpoint.cpp" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/UDPSocket.cpp" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/UDPSocket.h" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/TCPSocketServer.h" />
         <option value="$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/TCPSocketConnection.h" />
-        <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/Socket.cpp" />
-        <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.cpp" />
         <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/Endpoint.cpp" />
         <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/TCPSocketServer.h" />
         <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/TCPSocketConnection.h" />
@@ -99,6 +71,9 @@
         <option value="$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip-sys/arch/cc.h" />
         <option value="$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip-eth/arch/TARGET_STM/stm32f7_emac.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.h" />
+        <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/Socket.cpp" />
+        <option value="$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.cpp" />
       </list>
     </option>
   </component>
@@ -371,18 +346,18 @@
       <workItem from="1470599842518" duration="17662000" />
       <workItem from="1470757685090" duration="5081000" />
       <workItem from="1470828631752" duration="1319000" />
-      <workItem from="1470837904448" duration="2501000" />
+      <workItem from="1470837904448" duration="3925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26563000" />
+    <option name="totallyTimeSpent" value="27987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1113" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17291667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28998074" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851636" sideWeight="0.50208336" order="10" side_tool="true" content_ui="tabs" />
@@ -420,36 +395,15 @@
           <line>17</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/TESTS/mbedmicro-net/nist_internet_time_service/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/eth/EthernetInterface/EthernetInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="70" column="21" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/lwip-sys/arch/cc.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="57" column="12" selection-start-line="56" selection-start-column="0" selection-end-line="58" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/hal/api/mbed.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -481,31 +435,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwipopts.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip_stack.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip/core/lwip_udp.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/UDPSocket.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -537,20 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/Socket.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/UDPSocket.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/Endpoint.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -565,26 +484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/Socket.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/Endpoint.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,20 +517,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/TCPServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/SocketAddress.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/SocketAddress.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -683,28 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/nsapi.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/Socket.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,16 +656,158 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#179#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/hal/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/UDPSocket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/UDPSocket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="52" column="38" selection-start-line="51" selection-start-column="0" selection-end-line="54" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/libraries/net/lwip/Socket/Socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/NetworkInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/nsapi.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/hal/api/mbed.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="e#725#747#0" expanded="true" />
+            <element signature="e#826#848#0" expanded="true" />
+            <element signature="e#894#911#0" expanded="true" />
+            <element signature="e#955#978#0" expanded="true" />
+            <element signature="e#1063#1085#0" expanded="true" />
+            <element signature="e#1515#1533#0" expanded="true" />
+            <element signature="e#1813#1834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/SocketAddress.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/SocketAddress.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#665#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwipopts.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#1242#1294#0" expanded="true" />
+            <element signature="e#3759#3834#0" expanded="true" />
+            <element signature="e#4554#5059#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/FEATURE_IPV4/lwip-interface/lwip_stack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/Socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/Socket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#607#626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#607#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mbed-os/features/net/network-socket/UDPSocket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="45" />
+          <folding>
+            <element signature="e#651#685#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="468">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding />
         </state>
       </provider>

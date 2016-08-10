@@ -17,6 +17,7 @@
 #include "UDPSocket.h"
 #include "Timer.h"
 #include "mbed_assert.h"
+#include "lwip/sockets.h"
 
 UDPSocket::UDPSocket()
     : _pending(0), _read_sem(0), _write_sem(0),
@@ -32,6 +33,13 @@ UDPSocket::~UDPSocket()
 nsapi_protocol_t UDPSocket::get_proto()
 {
     return NSAPI_UDP;
+}
+
+
+int UDPSocket::set_broadcasting(bool broadcast)
+{
+    int option = (broadcast) ? (1) : (0);
+    return setsockopt(SOL_SOCKET, SO_BROADCAST, &option, sizeof(option));
 }
 
 int UDPSocket::sendto(const char *host, uint16_t port, const void *data, unsigned size)
