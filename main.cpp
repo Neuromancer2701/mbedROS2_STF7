@@ -1,12 +1,20 @@
 #include "mbed.h"
-#include "EthernetInterface.h"
-#include "network-socket/UDPSocket.h"
-#include "network-socket/Endpoint.h"
 
 DigitalOut led1(LED1);
 
 const int BROADCAST_PORT = 58083;
 
+int main()
+{
+    while (true)
+    {
+        led1 = !led1;
+        Thread::wait(500);
+    }
+}
+
+
+#if 0
 // main() runs in its own thread in the OS
 // (note the calls to Thread::wait below for delays)
 int main()
@@ -42,4 +50,6 @@ int main()
         Thread::wait(500);
     }
 }
+
+#endif
 
