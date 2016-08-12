@@ -17,7 +17,7 @@ limitations under the License.
 import socket
 from time import sleep, time
 
-BROADCAST_PORT = 58083
+BROADCAST_PORT = 58081
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind(('', 0))
@@ -27,4 +27,4 @@ while True:
     print "Broadcasting..."
     data = 'Hello World: ' + repr(time()) + '\n'
     s.sendto(data, ('<broadcast>', BROADCAST_PORT))
-    sleep(1)
+    sleep(10)

@@ -6,32 +6,41 @@ DigitalOut led1(LED1);
 
 
 using std::string;
-const int BROADCAST_PORT = 58083;
+const int BROADCAST_PORT_T = 58080;
+const int BROADCAST_PORT_R = 58081;
+EthernetInterface eth;
 
 
-
-UDPSocket socket_g;
 
 void transmit()
 {
+    UDPSocket socket(&eth);
+    socket.set_broadcasting();
     string out_buffer = "very important data";
-    SocketAddress transmit("255.255.255.255", BROADCAST_PORT);
+    SocketAddress transmit("255.255.255.255", BROADCAST_PORT_T);
 
     while (true)
     {
-        socket_g.sendto(transmit, out_buffer.c_str(), out_buffer.size());
+        int ret = socket.sendto(transmit, out_buffer.c_str(), out_buffer.size());
+
+        printf("sendto return: %d\n", ret);
         Thread::wait(500);
     }
 }
 
 void receive()
 {
-    SocketAddress receive;
+    SocketAddress receive("255.255.255.0", BROADCAST_PORT_R);
+    UDPSocket socket(&eth);
+
+    socket.bind(BROADCAST_PORT_R);
+    socket.set_broadcasting();
+
     char buffer[256];
     while (true)
     {
         printf("\nWait for packet...\n");
-        int n = socket_g.recvfrom(&receive, buffer, sizeof(buffer));
+        int n = socket.recvfrom(&receive, buffer, sizeof(buffer));
         if (n > 0)
         {
             buffer[n] = '\0';
@@ -46,15 +55,12 @@ int main()
 {
     Thread transmitter;
     Thread receiver;
-    EthernetInterface eth;
     eth.connect();
 
     printf("Controller IP Address is %s\r\n", eth.get_ip_address());
 
-    socket_g.bind(BROADCAST_PORT);
-    socket_g.set_broadcasting();
     transmitter.start(transmit);
-    receiver.start(receive);
+    //receiver.start(receive);
 
     while (true)
     {
