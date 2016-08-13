@@ -15,37 +15,33 @@ EthernetInterface eth;
 void transmit()
 {
     UDPSocket socket(&eth);
-    socket.set_broadcasting();
     string out_buffer = "very important data";
-    SocketAddress transmit("255.255.255.255", BROADCAST_PORT_T);
+    SocketAddress transmit("192.168.1.159", BROADCAST_PORT_T);
 
     while (true)
     {
         int ret = socket.sendto(transmit, out_buffer.c_str(), out_buffer.size());
-
         printf("sendto return: %d\n", ret);
-        Thread::wait(500);
+
+        Thread::wait(5000);
     }
 }
 
 void receive()
 {
-    SocketAddress receive("255.255.255.0", BROADCAST_PORT_R);
+    SocketAddress receive;
     UDPSocket socket(&eth);
-
-    socket.bind(BROADCAST_PORT_R);
-    socket.set_broadcasting();
+    int bind = socket.bind(BROADCAST_PORT_R);
+    printf("bind return: %d\n", bind);
 
     char buffer[256];
     while (true)
     {
         printf("\nWait for packet...\n");
         int n = socket.recvfrom(&receive, buffer, sizeof(buffer));
-        if (n > 0)
-        {
-            buffer[n] = '\0';
-            printf("Packet from \"%s\": %s\n", receive.get_ip_address(), buffer);
-        }
+        buffer[n] = '\0';
+        printf("Packet from \"%s\": %s\n", receive.get_ip_address(), buffer);
+
         Thread::wait(500);
     }
 }
@@ -58,9 +54,10 @@ int main()
     eth.connect();
 
     printf("Controller IP Address is %s\r\n", eth.get_ip_address());
+    Thread::wait(5000);
 
     transmitter.start(transmit);
-    //receiver.start(receive);
+    receiver.start(receive);
 
     while (true)
     {
