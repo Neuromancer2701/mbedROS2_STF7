@@ -19,6 +19,7 @@ cd mbed-os-example-blinky
 Invoke `mbed compile` specifying the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM Compiler 5:
 
 export PATH=$PATH:/opt/gcc-arm-none-eabi/bin/
+apt-get -y install lib32ncurses5
 
 ```
 mbed toolchain GCC_ARM
